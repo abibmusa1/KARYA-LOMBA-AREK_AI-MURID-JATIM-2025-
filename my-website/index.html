@@ -1,36 +1,119 @@
-<!doctype html>
-<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Website Sederhana - Abib Musa/Bagas Saputra</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #f5f5f5;
+            color: #222;
+        }
+        header{
+            background: #222;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .profile{
+            text-align: center;
+            padding: 30px;
+        }
+        .profile img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .section{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        .section h2{
+            border-bottom: 2px solid #222;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .project-card{
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        footer{
+            background: #222;
+            text-align: center;
+            padding: 15px;
+            color: white;
+            margin-top: 40px;
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a.button:hover{
+            background: #444;
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">Nama Kamu</h1>
-      <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">Tentang</a>
-        <a href="#projects">Projek</a>
-        <a href="#contact">Kontak</a>
-      </nav>
-      <button id="menu-toggle" class="menu-btn" aria-label="menu">☰</button>
-    </div>
-  </header>
 
-  <main>
-    <section id="home" class="hero container">
-      <h2>Halo, Ini website sederhana saya</h2>
-      <p>Buat tugas deadline? Ini contoh web yang mudah diubah.</p>
-      <a href="#projects" class="btn">Lihat Projek</a>
+    <header>
+        <h1>Nama Kamu</h1>
+        <p>Frontend Developer | Designer | Student</p>
+    </header>
+
+    <section class="profile">
+        <img src="https://via.placeholder.com/120" alt="profile">
+        <p>Halo! Saya adalah seorang pelajar yang tertarik dengan pemrograman, desain, dan teknologi. Saya membuat website ini sebagai bagian dari latihan dan dokumentasi perjalanan belajar coding.</p>
     </section>
 
-    <section id="about" class="container card">
-      <h3>Tentang</h3>
-      <p>Deskripsi singkat tentang kamu / tugas. Ganti sesuai kebutuhan.</p>
+    <section class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Git & GitHub</li>
+            <li>UI/UX Figma</li>
+            <li>Python / Java (opsional)</li>
+        </ul>
     </section>
+
+    <section class="section">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>Project 1 - Landing Page</h3>
+            <p>Website sederhana menggunakan HTML dan CSS.</p>
+            <a href="#" class="button">View</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 2 - To Do App</h3>
+            <p>Aplikasi task menggunakan JavaScript.</p>
+            <a href="#" class="button">View</a>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2025 | Portfolio by Nama Kamu</p>
+    </footer>
+
+</body>
+</html>
 
     <section id="projects" class="container">
       <h3>Projek</h3>
