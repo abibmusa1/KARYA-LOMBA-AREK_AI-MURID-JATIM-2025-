@@ -1,10 +1,7 @@
 function openExam() {
-  let url = document.getElementById("urlInput").value;
+    const url = document.getElementById("urlInput").value;
+    const frame = document.getElementById("examFrame");
 
-  if (!url.startsWith("http")) {
-    url = "https://" + url;
-  }
-
-  document.getElementById("examFrame").src = url;
+    frame.src = url;
+    frame.style.display = "block";
 }
-
