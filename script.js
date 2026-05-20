@@ -1,13 +1,10 @@
-document.getElementById('year').textContent = new Date().getFullYear();
+function openExam() {
+  let url = document.getElementById("urlInput").value;
 
-document.getElementById('menu-toggle').addEventListener('click', ()=>{
-  alert("Menu belum dibuat interaktif, ini hanya contoh.");
-});
+  if (!url.startsWith("http")) {
+    url = "https://" + url;
+  }
 
-const form = document.getElementById('contact-form');
-form.addEventListener('submit', (e)=>{
-  e.preventDefault();
-  alert("Pesan dikirim! (Simulasi)");
-  form.reset();
-});
+  document.getElementById("examFrame").src = url;
+}
 
