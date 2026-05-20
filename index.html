@@ -1,38 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Website Sederhana - Nama Kamu</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Browser</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">Nama Kamu</h1>
-      <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#about">Tentang</a>
-        <a href="#projects">Projek</a>
-        <a href="#contact">Kontak</a>
-      </nav>
-      <button id="menu-toggle" class="menu-btn" aria-label="menu">☰</button>
-    </div>
-  </header>
 
-  <main>
-    <section id="home" class="hero container">
-      <h2>Halo — Ini website sederhana ku</h2>
-      <p>Buat tugas deadline? Ini contoh web yang mudah diubah.</p>
-      <a href="#projects" class="btn">Lihat Projek</a>
-    </section>
+<div class="container">
+  <h1>Exam Browser</h1>
 
-    <section id="about" class="container card">
-      <h3>Tentang</h3>
-      <p>Deskripsi singkat tentang kamu / tugas. Ganti sesuai kebutuhan.</p>
-    </section>
+  <input type="text" id="urlInput" placeholder="Masukkan URL exam">
 
-    <section id="projects" class="container">
-      <h3>Projek</h3>
-      <div
+  <button onclick="openExam()">
+    START EXAM
+  </button>
+
+  <iframe id="examFrame"></iframe>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
